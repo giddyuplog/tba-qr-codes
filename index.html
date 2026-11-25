@@ -1,6 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}[hidden]{display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TBA Scan Sheet</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;600&display=swap">
 <style>
 /* Layout: one full-width card per TBA, stacked for thumb scrolling; QR always black-on-white for scanners */
@@ -10,7 +13,8 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111417;--surface:#1b2025;--fg:#e8edf1;--muted:#93a0ab;--line:#2c343b;--accent:#6ea8fe;--ok:#5cd18e;--ok-bg:#16301f;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#111417;--surface:#1b2025;--fg:#e8edf1;--muted:#93a0ab;--line:#2c343b;--accent:#6ea8fe;--ok:#5cd18e;--ok-bg:#16301f;color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font-family:var(--sans)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;font-size:14px;background:var(--bg);color:var(--fg);font-family:var(--sans)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line);
   padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
@@ -41,6 +45,8 @@ ol{list-style:none;margin:0 auto;padding:0;max-width:520px;display:grid;gap:18px
 .foot{max-width:520px;margin:20px auto 0;display:flex;justify-content:center}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
+</head>
+<body>
 
 <header class="bar">
   <div class="bar-in">
@@ -470,4 +476,5 @@ ol{list-style:none;margin:0 auto;padding:0;max-width:520px;display:grid;gap:18px
   wake();document.addEventListener('visibilitychange',function(){if(!document.hidden)wake()});
 })();
 </script>
-</body></html>
+</body>
+</html>
